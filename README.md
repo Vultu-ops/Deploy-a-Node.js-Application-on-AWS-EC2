@@ -230,6 +230,44 @@ Successfully:
 * Verified application accessibility
 
 ---
+## Stripe Payment Gateway Configuration
+
+This application uses Stripe for payment processing.
+
+### Creating a Stripe Account
+
+1. Visit https://dashboard.stripe.com/
+2. Create a Stripe account or log in.
+3. Navigate to:
+   Developers → API Keys
+
+### Retrieve API Keys
+
+Stripe provides two API keys:
+
+* Publishable Key (`pk_test_...`)
+* Secret Key (`sk_test_...`)
+
+### Configure Environment Variables
+
+Create a `.env` file in the application root directory:
+
+```env
+DOMAIN=""
+PORT=3000
+STATIC_DIR="./client"
+
+PUBLISHABLE_KEY="pk_test_xxxxxxxxxxxxxxxxx"
+SECRET_KEY="sk_test_xxxxxxxxxxxxxxxxx"
+```
+
+### Security Best Practices
+
+* Never commit `.env` files to GitHub.
+* Never expose the Secret Key publicly.
+* Store credentials securely using environment variables.
+* Use test keys during development and live keys only in production.
+
 
 ## Author
 
