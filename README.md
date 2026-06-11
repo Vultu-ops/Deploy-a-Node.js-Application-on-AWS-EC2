@@ -190,34 +190,6 @@ http://<PUBLIC_IP>:3000
 
 ---
 
-## Challenges Faced
-
-### SSH Connection Refused
-
-Error:
-
-```bash
-ssh: connect to host <IP> port 22: Connection refused
-```
-
-Resolution:
-
-* Verified EC2 instance status
-* Checked Security Group inbound rules
-* Allowed SSH access on port 22
-* Confirmed correct Ubuntu username
-
----
-
-## Security Measures
-
-* SSH key authentication
-* Restricted security group rules
-* Separate IAM user for administration
-* Ubuntu package updates
-
----
-
 ## Project Outcomes
 
 Successfully:
